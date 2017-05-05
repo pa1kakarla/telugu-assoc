@@ -1,0 +1,65 @@
+
+
+  
+  <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header" style="padding: 0;">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand" href="#"><img [src]="LOGO" class="logo" alt="logo"></div>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <div class="menu">
+            <ul class="nav navbar-nav navbar-right" >
+              <li><a href="http://tasj.org/index.html" class="active" style="color:white;">Home</a></li>
+              <li><a href="http://tasj.org/events.html" class="active" style="color:white;">Programs & Events</a></li>
+              <li><a href="http://tasj.org/photo-galaries.html" class="active" style="color:white;">Photo Galleries</a></li>
+             <!-- <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+              <li><a routerLink="/blog" routerLinkActive="active">Blog</a></li>-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"style="color:white;">Membership<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <!--<li><a href="#">Log in</a></li>-->
+                 <!-- <li><a href="#">Sign up</a></li>-->
+                  <li><a routerLink="/ugadi">Create</a></li>
+                </ul>
+              </li>
+              <li ><a href="http://tasj.org/socialwork.html" class="active" style="color:white;" >Social Work</a></li>
+              <li><a href="http://tasj.org/volunteerteams.html" class="active"style="color:white;">Volunteer Teams</a></li>
+              <li><a href="http://tasj.org/aboutus.html" class="active" style="color:white;">About Us</a></li>
+              </ul>
+            </div>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+        
+      </nav>
+  
+      <div class="title-page">
+      <h1>
+       {{title}}
+      </h1>
+      </div>
+     <router-outlet></router-outlet>
+
+<br>
+<br>
+<br>
+
+<footer id="footer">
+  <div class="row">
+    <div class="col-md-6">Copyright &copy; 2017 <span style="color:rgb(0, 154, 211);">Telugu Association Of Nacogdoches</span>All Rights Reserved.
+    </div>
+  
+
+<div class="col-md-6 text-right">
+        <a href="https://www.facebook.com/TeluguAssociationOfSouthJersey/?fref=ts" target="_blank" style="font-size:25px;"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank" style="font-size:25px;"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.pinterest.com/tasjsocial/" target="_blank" style="font-size:25px;"><i class="fa fa-pinterest"></i></a>
+        <a href="https://plus.google.com/u/1/" style="font-size:25px;"><i class="fa fa-google-plus"></i></a>
+</div>
+  </div> 
+</footer>

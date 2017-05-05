@@ -1,0 +1,34 @@
+1. npm install -g loopback-cli
+2. lb
+name the directory to api and keep the rest as default
+3. cd api
+4. node . [with this command we can browse our api]
+5. slc arc [this command is used to deploy, manage our api]
+6. add "loopback-connector-mongodb" in package.json(dependencies)
+7. set the path for mongodb by copying the mongo.exe location and paste in environment variables.
+8. api can be tested at localhost:3000/explorer
+9. db can be created at strong studio by using slc arc.
+10. db created in localhost is accessed when we start mongo server by mongod and then looking up mongo client by typing mongo.
+11. [show dbs] to see db
+12. [use db] to switch to that db
+13. [show collections] to go to collections
+14. [db.collection.find()] to access all data inside collection
+15. lb model to create api models
+16. npm install angular-cli for angular2 installation
+17. ng new blog for creating new angular2 app, ng serve for starting the app
+18. add bootstrap in index.html
+19. create new component named blog in app folder
+20. add router outlet in app.component.html by creating new div class=container.
+21. add routerLink in app.component.html and <base href="/"> in index.html
+22. add routes in app.module.ts
+23. create new component named home
+24. add new route for home component in app.module.ts
+25. copy navbar from bootstrap and paste it in app.component.html
+26. create post.ts in blog folder and define id, title and body as string inside the constructor.
+27. create post service.
+28. inside post service add http module and import post and observable. add the api link from strong loop inside post service.
+29. write get method in the api to take details from db.
+30.
+
+
+

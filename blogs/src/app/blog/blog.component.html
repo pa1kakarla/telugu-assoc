@@ -1,0 +1,15 @@
+<h1>
+  {{title}}
+</h1>
+<div *ngIf="posts.length" class="blog-list">
+  <article *ngFor="let post of posts">
+    <h2><a routerLink="/blog/{{post.id}}">{{post.FirstName}}</a></h2>
+    <div class="post-LastName">{{post.LastName}}</div>
+    <div class="post-Email">{{post.Email}}</div>
+    <div class="post-PhoneNumber">{{post.PhoneNumber}}</div>
+    <div class="post-Address">{{post.Address}}</div>
+    <div class="post-City">{{post.City}}</div>
+    <div class="post-State">{{post.State}}</div>
+    <div class="post-ZipCode">{{post.ZipCode}}</div>
+  </article>
+</div>
